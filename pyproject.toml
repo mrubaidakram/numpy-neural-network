@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "numpy-neural-network"
+version = "0.1.0"
+description = "A from-scratch NumPy multilayer perceptron with manual backpropagation on MNIST."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26", "scikit-learn>=1.4"]
+
+[project.scripts]
+train-numpy-neural-network = "numpy_nn.train:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

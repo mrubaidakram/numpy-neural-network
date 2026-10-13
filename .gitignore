@@ -1,0 +1,15 @@
+/data/*
+!/data/README.md
+/artifacts/*
+!/artifacts/README.md
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.npz
+*.npy
+*.egg-info/
+build/
+dist/
+.env
+.DS_Store
